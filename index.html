@@ -1,265 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ParentalPathway • Premium Parenting Guides</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', system-ui, sans-serif; }
-        .heading-serif { font-family: 'Playfair Display', Georgia, serif; }
-        .premium-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-        .premium-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
-    </style>
-</head>
-<body class="bg-[#FCFAF7] text-[#1F1F1F]">
-
-    <!-- NAV -->
-    <nav class="sticky top-0 z-50 bg-[#FCFAF7]/95 backdrop-blur-lg border-b border-[#E9E3DA]">
-        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-            <div class="text-3xl font-bold tracking-tighter text-[#667A6D]">ParentalPathway</div>
-            <div class="flex items-center gap-x-8 text-sm font-medium">
-                <a href="#guides" class="hover:text-[#667A6D] transition-colors">Guides</a>
-                <a href="#why" class="hover:text-[#667A6D] transition-colors">Why Us</a>
-                <a href="#faq" class="hover:text-[#667A6D] transition-colors">FAQ</a>
-                <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank" 
-                   class="bg-[#C97A63] hover:bg-[#A46B5D] text-white px-6 py-3 rounded-full text-sm font-semibold transition-all">
-                    Shop on Etsy
-                </a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- HERO -->
-    <section class="max-w-7xl mx-auto px-6 pt-16 pb-20">
-        <div class="grid lg:grid-cols-12 gap-12 items-center">
-            <div class="lg:col-span-7">
-                <h1 class="heading-serif text-7xl leading-none tracking-tighter mb-6">
-                    Parenting Doesn't Come With Instructions.<br>
-                    <span class="text-[#C97A63]">Our Guides Do.</span>
-                </h1>
-                <p class="max-w-lg text-2xl text-[#444] mb-10">
-                    Research-backed parenting guides designed to help you feel confident through pregnancy, newborn care, and your child’s earliest years.
-                </p>
-                <div class="flex flex-wrap gap-4">
-                    <a href="#guides" class="bg-[#C97A63] hover:bg-[#A46B5D] text-white px-10 py-4 rounded-2xl text-lg font-semibold transition-all">Shop Guides</a>
-                    <a href="#guides" class="border border-[#667A6D] hover:bg-[#F7F3EC] px-10 py-4 rounded-2xl text-lg font-semibold transition-all">Browse Best Sellers</a>
-                </div>
-            </div>
-            <div class="lg:col-span-5 relative">
-                <div class="flex gap-6 justify-center lg:justify-end">
-                    <div class="w-48 -rotate-6"><img src="fourth-trimester.jpg" class="rounded-3xl w-full shadow-2xl" alt=""></div>
-                    <div class="w-48 rotate-3 mt-8"><img src="hospital-bag-cover.jpg" class="rounded-3xl w-full shadow-2xl" alt=""></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PHILOSOPHY / WHY US -->
-    <section id="why" class="max-w-5xl mx-auto px-6 pb-20 text-center">
-        <h2 class="heading-serif text-5xl tracking-tight mb-6">We’ve Already Done The Work</h2>
-        <p class="max-w-2xl mx-auto text-xl text-[#555] mb-4">
-            The internet is full of opinions. We offer something rarer: clarity.
+<!-- EXPANDED PHILOSOPHY SECTION -->
+<section id="why" class="max-w-5xl mx-auto px-6 pb-24 text-center">
+    <h2 class="heading-serif text-5xl tracking-tight mb-8">We’ve Already Done The Work</h2>
+    
+    <div class="max-w-3xl mx-auto space-y-6 text-lg text-[#555]">
+        <p>
+            The internet is full of opinions. We offer something rarer: <span class="font-semibold text-[#1F1F1F]">clarity</span>.
         </p>
-        <p class="max-w-2xl mx-auto text-lg text-[#666]">
-            Every guide is the result of deep research and real parental experience. We cut through the noise so you can parent with calm confidence instead of overwhelm.
+        
+        <p>
+            Every guide we create is the result of deep research, lived experience, and a genuine commitment to telling parents the truth — not just what’s trendy or easy to package.
         </p>
-    </section>
+        
+        <p>
+            We cut through the noise, the conflicting advice, and the constant pressure so you can focus on what actually matters at each stage of parenting. No judgment. No fluff. Just calm, practical guidance designed for real life.
+        </p>
+    </div>
 
-    <!-- BEST SELLING GUIDES (9 Guides) -->
-    <section id="guides" class="max-w-7xl mx-auto px-6 pb-20">
-        <div class="flex justify-between items-end mb-10">
-            <div>
-                <div class="uppercase tracking-[3px] text-sm text-[#C97A63] font-semibold">Featured Guides</div>
-                <h2 class="heading-serif text-5xl tracking-tight">Best-Selling Guides</h2>
-            </div>
-            <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank" class="hidden md:block text-[#C97A63] font-semibold hover:underline">View all on Etsy →</a>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-            <!-- 1 -->
-            <div class="premium-card bg-white rounded-3xl overflow-hidden border border-[#E9E3DA]">
-                <img src="fourth-trimester.jpg" class="w-full h-[320px] object-contain bg-[#F7F3EC] p-6">
-                <div class="p-8">
-                    <h3 class="text-2xl font-semibold tracking-tight mb-2">The Fourth Trimester Guide</h3>
-                    <p class="text-[#555] text-sm mb-6">What the first twelve weeks are actually like — and what to do with them.</p>
-                    <div class="flex justify-between items-center">
-                        <div class="text-2xl font-semibold">$19</div>
-                        <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank" class="bg-[#C97A63] hover:bg-[#A46B5D] text-white px-6 py-2.5 rounded-2xl text-sm font-semibold">Buy Now</a>
-                    </div>
+    <!-- What Makes Us Different -->
+    <div class="mt-16 max-w-4xl mx-auto">
+        <h3 class="text-3xl font-semibold tracking-tight mb-10">What Makes Us Different</h3>
+        
+        <div class="grid md:grid-cols-2 gap-x-12 gap-y-8 text-left max-w-3xl mx-auto">
+            
+            <div class="flex gap-4">
+                <div class="text-[#C97A63] text-2xl mt-1">→</div>
+                <div>
+                    <div class="font-semibold text-xl mb-1">Research-Backed + Real Experience</div>
+                    <p class="text-[#555]">Every guide combines evidence-based information with the real, messy reality of parenting — not theory from a textbook.</p>
                 </div>
             </div>
 
-            <!-- 2 -->
-            <div class="premium-card bg-white rounded-3xl overflow-hidden border border-[#E9E3DA]">
-                <img src="hospital-bag-cover.jpg" class="w-full h-[320px] object-contain bg-[#F7F3EC] p-6">
-                <div class="p-8">
-                    <h3 class="text-2xl font-semibold tracking-tight mb-2">Your Hospital Bag, Actually</h3>
-                    <p class="text-[#555] text-sm mb-6">What actually matters, what hospitals already provide, and how to pack it without the panic.</p>
-                    <div class="flex justify-between items-center">
-                        <div class="text-2xl font-semibold">$17</div>
-                        <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank" class="bg-[#C97A63] hover:bg-[#A46B5D] text-white px-6 py-2.5 rounded-2xl text-sm font-semibold">Buy Now</a>
-                    </div>
+            <div class="flex gap-4">
+                <div class="text-[#C97A63] text-2xl mt-1">→</div>
+                <div>
+                    <div class="font-semibold text-xl mb-1">Practical, Not Overwhelming</div>
+                    <p class="text-[#555]">We give you clear steps, checklists, and scripts you can actually use — instead of long lists of things you “should” be doing.</p>
                 </div>
             </div>
 
-            <!-- 3 -->
-            <div class="premium-card bg-white rounded-3xl overflow-hidden border border-[#E9E3DA]">
-                <img src="relationship-cover.jpg" class="w-full h-[320px] object-contain bg-[#F7F3EC] p-6">
-                <div class="p-8">
-                    <h3 class="text-2xl font-semibold tracking-tight mb-2">Preparing Your Relationship for Baby</h3>
-                    <p class="text-[#555] text-sm mb-6">What actually shifts between you — and the small habits that protect your bond.</p>
-                    <div class="flex justify-between items-center">
-                        <div class="text-2xl font-semibold">$18</div>
-                        <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank" class="bg-[#C97A63] hover:bg-[#A46B5D] text-white px-6 py-2.5 rounded-2xl text-sm font-semibold">Buy Now</a>
-                    </div>
+            <div class="flex gap-4">
+                <div class="text-[#C97A63] text-2xl mt-1">→</div>
+                <div>
+                    <div class="font-semibold text-xl mb-1">No Judgment, Just Support</div>
+                    <p class="text-[#555]">We meet you where you are. Whether you're breastfeeding, formula feeding, cosleeping, or sleep training — we support your choices.</p>
                 </div>
             </div>
 
-            <!-- 4 -->
-            <div class="premium-card bg-white rounded-3xl overflow-hidden border border-[#E9E3DA]">
-                <img src="what-to-expect-prenatal.jpg" class="w-full h-[320px] object-contain bg-[#F7F3EC] p-6">
-                <div class="p-8">
-                    <h3 class="text-2xl font-semibold tracking-tight mb-2">What to Expect When You Don't Know What to Expect</h3>
-                    <p class="text-[#555] text-sm mb-6">A calm, honest map for the prenatal unknown and the firehose of advice.</p>
-                    <div class="flex justify-between items-center">
-                        <div class="text-2xl font-semibold">$17</div>
-                        <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank" class="bg-[#C97A63] hover:bg-[#A46B5D] text-white px-6 py-2.5 rounded-2xl text-sm font-semibold">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 5 -->
-            <div class="premium-card bg-white rounded-3xl overflow-hidden border border-[#E9E3DA]">
-                <img src="newborn-sleep-foundations.jpg" class="w-full h-[320px] object-contain bg-[#F7F3EC] p-6">
-                <div class="p-8">
-                    <h3 class="text-2xl font-semibold tracking-tight mb-2">Newborn Sleep Foundations</h3>
-                    <p class="text-[#555] text-sm mb-6">Safe sleep practices and realistic expectations for the early weeks.</p>
-                    <div class="flex justify-between items-center">
-                        <div class="text-2xl font-semibold">$16</div>
-                        <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank" class="bg-[#C97A63] hover:bg-[#A46B5D] text-white px-6 py-2.5 rounded-2xl text-sm font-semibold">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 6 -->
-            <div class="premium-card bg-white rounded-3xl overflow-hidden border border-[#E9E3DA]">
-                <img src="soothing-playbook.jpg" class="w-full h-[320px] object-contain bg-[#F7F3EC] p-6">
-                <div class="p-8">
-                    <h3 class="text-2xl font-semibold tracking-tight mb-2">The Soothing Playbook</h3>
-                    <p class="text-[#555] text-sm mb-6">Practical tools and scripts to calm your baby during crying episodes.</p>
-                    <div class="flex justify-between items-center">
-                        <div class="text-2xl font-semibold">$18</div>
-                        <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank" class="bg-[#C97A63] hover:bg-[#A46B5D] text-white px-6 py-2.5 rounded-2xl text-sm font-semibold">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 7 -->
-            <div class="premium-card bg-white rounded-3xl overflow-hidden border border-[#E9E3DA]">
-                <img src="feeding-peace-plan.jpg" class="w-full h-[320px] object-contain bg-[#F7F3EC] p-6">
-                <div class="p-8">
-                    <h3 class="text-2xl font-semibold tracking-tight mb-2">The Feeding Peace Plan</h3>
-                    <p class="text-[#555] text-sm mb-6">Fed is the goal. Practical strategies for feeding without power struggles.</p>
-                    <div class="flex justify-between items-center">
-                        <div class="text-2xl font-semibold">$17</div>
-                        <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank" class="bg-[#C97A63] hover:bg-[#A46B5D] text-white px-6 py-2.5 rounded-2xl text-sm font-semibold">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 8 -->
-            <div class="premium-card bg-white rounded-3xl overflow-hidden border border-[#E9E3DA]">
-                <img src="milestone-map.jpg" class="w-full h-[320px] object-contain bg-[#F7F3EC] p-6">
-                <div class="p-8">
-                    <h3 class="text-2xl font-semibold tracking-tight mb-2">The Milestone Map</h3>
-                    <p class="text-[#555] text-sm mb-6">Birth to 24 months — what most babies do, and why your baby isn’t behind.</p>
-                    <div class="flex justify-between items-center">
-                        <div class="text-2xl font-semibold">$16</div>
-                        <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank" class="bg-[#C97A63] hover:bg-[#A46B5D] text-white px-6 py-2.5 rounded-2xl text-sm font-semibold">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 9 -->
-            <div class="premium-card bg-white rounded-3xl overflow-hidden border border-[#E9E3DA]">
-                <img src="meltdown-playbook.jpg" class="w-full h-[320px] object-contain bg-[#F7F3EC] p-6">
-                <div class="p-8">
-                    <h3 class="text-2xl font-semibold tracking-tight mb-2">The Meltdown Playbook</h3>
-                    <p class="text-[#555] text-sm mb-6">Practical strategies to handle toddler meltdowns with calm and connection.</p>
-                    <div class="flex justify-between items-center">
-                        <div class="text-2xl font-semibold">$18</div>
-                        <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank" class="bg-[#C97A63] hover:bg-[#A46B5D] text-white px-6 py-2.5 rounded-2xl text-sm font-semibold">Buy Now</a>
-                    </div>
+            <div class="flex gap-4">
+                <div class="text-[#C97A63] text-2xl mt-1">→</div>
+                <div>
+                    <div class="font-semibold text-xl mb-1">Designed for Busy Parents</div>
+                    <p class="text-[#555]">Our guides are concise, well-organized, and easy to read in short moments — because we know you don’t have hours to spare.</p>
                 </div>
             </div>
 
         </div>
-
-        <div class="text-center mt-10">
-            <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank" class="inline-block border border-[#667A6D] hover:bg-[#F7F3EC] px-8 py-3 rounded-2xl font-semibold">
-                View All 15 Guides on Etsy →
-            </a>
-        </div>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section class="max-w-6xl mx-auto px-6 pb-20">
-        <h2 class="heading-serif text-5xl text-center tracking-tight mb-14">Parents Are Saying</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white p-8 rounded-3xl border border-[#E9E3DA]">
-                <div class="flex text-[#C97A63] mb-4">★★★★★</div>
-                <p class="italic mb-6">"These guides didn’t just give me information. They gave me permission to feel what I was feeling — and the tools to move through it with grace."</p>
-                <div class="font-semibold">— Elena R.</div>
-                <div class="text-sm text-[#666]">Mother of a 7-month-old</div>
-            </div>
-            <div class="bg-white p-8 rounded-3xl border border-[#E9E3DA]">
-                <div class="flex text-[#C97A63] mb-4">★★★★★</div>
-                <p class="italic mb-6">"The hospital bag guide saved me hours of panic Googling. Everything I actually needed was there."</p>
-                <div class="font-semibold">— Sarah M.</div>
-                <div class="text-sm text-[#666]">Expecting twins</div>
-            </div>
-            <div class="bg-white p-8 rounded-3xl border border-[#E9E3DA]">
-                <div class="flex text-[#C97A63] mb-4">★★★★★</div>
-                <p class="italic mb-6">"Finally, something that feels written by someone who actually understands new parenthood."</p>
-                <div class="font-semibold">— Marcus T.</div>
-                <div class="text-sm text-[#666]">Dad of a 3-year-old</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq" class="max-w-4xl mx-auto px-6 pb-20">
-        <h2 class="heading-serif text-5xl text-center tracking-tight mb-12">Frequently Asked Questions</h2>
-        <div class="space-y-4">
-            <div class="border border-[#E9E3DA] rounded-2xl p-7">
-                <div class="font-semibold text-xl">Are these physical books or digital downloads?</div>
-                <div class="mt-3 text-[#555]">All guides are digital PDFs. You’ll receive instant access after purchase.</div>
-            </div>
-            <div class="border border-[#E9E3DA] rounded-2xl p-7">
-                <div class="font-semibold text-xl">Can I get a refund?</div>
-                <div class="mt-3 text-[#555]">Yes. We offer a 30-day money-back guarantee through Etsy.</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- EMAIL CAPTURE -->
-    <section class="max-w-2xl mx-auto px-6 pb-20 text-center">
-        <h2 class="heading-serif text-4xl tracking-tight mb-4">Get Parenting Tips You’ll Actually Use</h2>
-        <p class="text-xl text-[#555] mb-8">Join parents receiving practical advice and exclusive resources.</p>
-        <div class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-            <input type="email" placeholder="Your email address" class="flex-1 border border-[#E9E3DA] px-6 py-4 rounded-2xl text-lg focus:outline-none">
-            <button onclick="alert('Thank you! Check your email for your free resource. (Demo)')" class="bg-[#C97A63] hover:bg-[#A46B5D] text-white px-10 py-4 rounded-2xl font-semibold whitespace-nowrap">Send Me the Guide</button>
-        </div>
-    </section>
-
-    <footer class="border-t border-[#E9E3DA] py-16">
-        <div class="max-w-7xl mx-auto px-6 text-center text-sm text-[#666]">
-            © 2026 ParentalPathway. Premium parenting resources.
-        </div>
-    </footer>
-
-</body>
-</html>
+    </div>
+</section>
