@@ -3,34 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ParentalPathway • Calm Guidance for Modern Parents</title>
+    <title>ParentalPathway — Calm Guidance for Modern Parents</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Georgia:wght@400;600&family=Inter:wght@400;500;600&display=swap');
+        :root {
+            --sage: #667A6D;
+            --terracotta: #C97A63;
+            --cream: #FCFAF7;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: 'Inter', system-ui, sans-serif;
+            background: #FCFAF7;
+            color: #1F1F1F;
+            line-height: 1.7;
+        }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 700; line-height: 1.05; }
         
-        body { font-family: 'Georgia', serif; margin: 0; background: #FCFAF7; color: #2B2B2B; }
-        header { background: #F7F3EC; padding: 1.2rem 5%; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #eee; }
-        nav { max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 1.9rem; font-weight: 600; color: #667A6D; }
-        .nav-links a { margin-left: 2rem; text-decoration: none; color: #2B2B2B; font-weight: 500; }
-        
-        .hero { background: linear-gradient(#F7F3EC, #EDE6D9); padding: 120px 5% 100px; text-align: center; }
-        .hero h1 { font-size: 3.4rem; line-height: 1.05; max-width: 900px; margin: 0 auto 1.5rem; }
-        .hero p { font-size: 1.35rem; max-width: 700px; margin: 0 auto 2rem; color: #444; }
-        .btn { padding: 14px 36px; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block; margin: 8px; font-size: 1.05rem; }
-        .primary { background: #C97A63; color: white; }
-        .secondary { background: #667A6D; color: white; }
-        
-        .guides { max-width: 1200px; margin: 80px auto; padding: 0 5%; }
-        .guides h2 { text-align: center; font-size: 2.6rem; margin-bottom: 3rem; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 30px; }
-        .card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: all 0.3s; }
-        .card:hover { transform: translateY(-12px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
-        .card-header { height: 240px; display: flex; align-items: center; justify-content: center; font-size: 5rem; }
-        .card-body { padding: 28px; }
-        .card-body h3 { margin: 0 0 12px 0; font-size: 1.55rem; }
-        .price { font-weight: 600; color: #C97A63; }
-        
-        footer { background: #F7F3EC; padding: 60px 5% 40px; text-align: center; }
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(252, 250, 247, 0.95);
+            backdrop-filter: blur(12px);
+            z-index: 100;
+            padding: 1.5rem 5%;
+            border-bottom: 1px solid #E9E3DA;
+        }
+        nav {
+            max-width: 1280px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.85rem;
+            font-family: 'Playfair Display', serif;
+            color: var(--sage);
+            letter-spacing: -1px;
+        }
+        .nav-links a {
+            margin-left: 2.5rem;
+            text-decoration: none;
+            color: #1F1F1F;
+            font-weight: 500;
+            font-size: 1.05rem;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 0 5%;
+            position: relative;
+            background: linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0.15)), url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat;
+        }
+        .hero-content {
+            max-width: 680px;
+            z-index: 2;
+        }
+        .hero h1 {
+            font-size: 4.8rem;
+            line-height: 1.05;
+            margin-bottom: 1.5rem;
+            color: #1F1F1F;
+        }
+        .hero p {
+            font-size: 1.4rem;
+            max-width: 520px;
+            color: #333;
+            margin-bottom: 2.5rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 18px 42px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .btn-primary {
+            background: #C97A63;
+            color: white;
+        }
+        .btn-primary:hover { background: #A46B5D; transform: translateY(-2px); }
+
+        section {
+            padding: 140px 5%;
+            max-width: 1280px;
+            margin: auto;
+        }
+        .section-title {
+            font-size: 2.8rem;
+            text-align: center;
+            margin-bottom: 4rem;
+            color: #1F1F1F;
+        }
+
+        .collections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 60px;
+        }
+        .collection {
+            position: relative;
+        }
+        .collection img {
+            width: 100%;
+            height: 520px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .collection h3 {
+            font-size: 2.1rem;
+            margin: 1.5rem 0 0.8rem;
+        }
+
+        .testimonial {
+            font-size: 1.55rem;
+            max-width: 720px;
+            margin: auto;
+            text-align: center;
+            font-style: italic;
+            line-height: 1.4;
+        }
+        .testimonial-author {
+            margin-top: 3rem;
+            font-style: normal;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            background: #1F1F1F;
+            color: #ddd;
+            padding: 100px 5% 60px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -38,60 +148,63 @@
         <nav>
             <div class="logo">ParentalPathway</div>
             <div class="nav-links">
-                <a href="#guides">Shop</a>
-                <a href="#">Collections</a>
-                <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank">Etsy Shop</a>
+                <a href="#collections">Collections</a>
+                <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank">Shop on Etsy</a>
             </div>
         </nav>
     </header>
 
     <section class="hero">
-        <h1>Parenting Doesn't Come With Instructions.<br>Ours Come Close.</h1>
-        <p>Practical, research-backed guides helping you navigate pregnancy, newborn care, toddlerhood, and childhood with confidence and less overwhelm.</p>
-        <div>
-            <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank" class="btn primary">Shop Guides on Etsy</a>
-            <a href="#" onclick="alert('Free Toolkit sent! (Demo)')" class="btn secondary">Free Starter Toolkit</a>
+        <div class="hero-content">
+            <h1>Parenting Doesn't Come With Instructions.<br>But Good Guidance Helps.</h1>
+            <p>Thoughtful, research-backed resources for parents who want clarity without the noise.</p>
+            <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank" class="btn btn-primary">Browse Our Guides</a>
         </div>
     </section>
 
-    <section class="guides" id="guides">
-        <h2>Our Popular Guides</h2>
-        <div class="grid">
-            <div class="card">
-                <div class="card-header" style="background:#D8AAA0;">👜</div>
-                <div class="card-body">
-                    <h3>Your Hospital Bag, Actually</h3>
-                    <p>What actually matters, what hospitals provide, and how to pack without the panic.</p>
-                    <p class="price">$17</p>
-                    <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank" class="btn primary" style="width:100%; text-align:center; margin-top:15px;">Buy on Etsy</a>
-                </div>
-            </div>
+    <section>
+        <h2 class="section-title">We've Done The Research</h2>
+        <p style="max-width:680px; margin:auto; font-size:1.35rem; text-align:center; color:#444;">
+            The internet is full of opinions. Our guides cut through the noise and focus on what actually matters — so you can parent with more confidence and less overwhelm.
+        </p>
+    </section>
 
-            <div class="card">
-                <div class="card-header" style="background:#DCC9AA;">👶</div>
-                <div class="card-body">
-                    <h3>The Fourth Trimester Guide</h3>
-                    <p>What the first twelve weeks are actually like — and what to do with them.</p>
-                    <p class="price">$19</p>
-                    <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank" class="btn primary" style="width:100%; text-align:center; margin-top:15px;">Buy on Etsy</a>
-                </div>
+    <section id="collections">
+        <h2 class="section-title">Collections</h2>
+        <div class="collections">
+            <div class="collection">
+                <img src="https://picsum.photos/id/1015/800/520" alt="Pregnancy">
+                <h3>Pregnancy</h3>
+                <p>From the unknown to the expected.</p>
+                <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank" style="color:var(--sage); font-weight:600;">Explore →</a>
             </div>
+            <div class="collection">
+                <img src="https://picsum.photos/id/201/800/520" alt="Newborn">
+                <h3>Newborn</h3>
+                <p>The first tender weeks.</p>
+                <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank" style="color:var(--sage); font-weight:600;">Explore →</a>
+            </div>
+            <div class="collection">
+                <img src="https://picsum.photos/id/251/800/520" alt="Sleep">
+                <h3>Sleep</h3>
+                <p>Understanding the changes.</p>
+                <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank" style="color:var(--sage); font-weight:600;">Explore →</a>
+            </div>
+        </div>
+    </section>
 
-            <div class="card">
-                <div class="card-header" style="background:#B7A9C9;">🌙</div>
-                <div class="card-body">
-                    <h3>Sleep Transitions</h3>
-                    <p>4 months to 2 years — why sleep changes and how to navigate it.</p>
-                    <p class="price">$18</p>
-                    <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank" class="btn primary" style="width:100%; text-align:center; margin-top:15px;">Buy on Etsy</a>
-                </div>
-            </div>
+    <section style="background:#F7F3EC;">
+        <div class="testimonial">
+            “These guides feel like a wise friend who’s done the work so I don’t have to. Finally, information I can trust.”
+            <div class="testimonial-author">— Sarah M., Expecting her first</div>
         </div>
     </section>
 
     <footer>
-        <p>© 2026 ParentalPathway • Calm, research-backed parenting resources</p>
-        <p style="margin-top:10px;"><a href="https://www.etsy.com/shop/ParentalPathway" target="_blank" style="color:#C97A63;">Visit our full Etsy Shop →</a></p>
+        <p style="font-size:1.1rem;">ParentalPathway — Calm, intelligent guidance for modern parents.</p>
+        <p style="margin-top:2rem;">
+            <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank" style="color:#C97A63; text-decoration:none;">Shop All Guides on Etsy →</a>
+        </p>
     </footer>
 </body>
 </html>
