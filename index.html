@@ -1,13 +1,174 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ParentalPathway</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParentalPathway — Calm Guidance for Modern Parents</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', system-ui, sans-serif;
+            background: #FCFAF7;
+            color: #1F1F1F;
+            line-height: 1.7;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 700;
+            line-height: 1.05;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 6%;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(252, 250, 247, 0.95);
+            backdrop-filter: blur(20px);
+            padding: 2rem 6%;
+            border-bottom: 1px solid #E9E3DA;
+            z-index: 100;
+        }
+        .nav-inner {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 2.1rem;
+            color: #667A6D;
+            letter-spacing: -1px;
+        }
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: #1F1F1F;
+            color: white;
+            position: relative;
+        }
+        .hero h1 {
+            font-size: 5.8rem;
+            line-height: 1.0;
+            margin-bottom: 2rem;
+            max-width: 14ch;
+        }
+        .hero p {
+            font-size: 1.55rem;
+            max-width: 28ch;
+            opacity: 0.85;
+        }
+        .section {
+            padding: 120px 6%;
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+        .pull-quote {
+            font-size: 2.4rem;
+            line-height: 1.3;
+            max-width: 28ch;
+            margin: 0 auto;
+            text-align: center;
+            font-style: italic;
+        }
+        .btn {
+            display: inline-block;
+            background: #C97A63;
+            color: white;
+            padding: 18px 42px;
+            font-size: 1.15rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        footer {
+            background: #1F1F1F;
+            color: #E9E3DA;
+            padding: 100px 6% 60px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <div class="nav-inner">
+            <div class="logo">ParentalPathway</div>
+            <div>
+                <a href="#guides" style="margin-right: 2.5rem; color: #1F1F1F; text-decoration: none;">Guides</a>
+                <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank" style="color: #C97A63; text-decoration: none; font-weight: 600;">Shop on Etsy</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <h1>Parenting<br>Doesn’t Come<br>With Instructions.</h1>
+            <p>But thoughtful, research-backed guidance can help you feel more grounded in the most important role of your life.</p>
+            <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank" class="btn" style="margin-top: 2rem;">Explore the Guides</a>
+        </div>
+    </section>
+
+    <!-- PHILOSOPHY -->
+    <section class="section" style="background: #F7F3EC;">
+        <div class="container" style="max-width: 720px; text-align: center;">
+            <h2 style="font-size: 3.8rem; margin-bottom: 2rem;">We’ve Already Done The Work</h2>
+            <p style="font-size: 1.45rem; color: #444;">The internet is full of opinions. We offer something rarer: clarity.</p>
+            <p style="font-size: 1.45rem; color: #444; margin-top: 1.5rem;">Every guide is written with deep research and real experience so you can parent with more confidence and less overwhelm.</p>
+        </div>
+    </section>
+
+    <!-- EDITORIAL FEATURE -->
+    <section class="section">
+        <div class="container editorial-grid">
+            <div>
+                <img src="https://picsum.photos/id/1015/900/1100" alt="Quiet newborn moment" style="width: 100%; border-radius: 8px;">
+            </div>
+            <div>
+                <div style="color: #C97A63; font-size: 0.95rem; letter-spacing: 2px; margin-bottom: 1rem;">FEATURED STORY</div>
+                <h2 style="font-size: 3.6rem; line-height: 1.05; margin-bottom: 2rem;">The First Twelve Weeks Are Not What You Expect</h2>
+                <p style="font-size: 1.35rem; color: #444;">They are harder and more beautiful than most articles prepare you for. Our Fourth Trimester Guide was written for parents who want the truth — without the sugarcoating.</p>
+                <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank" style="color: #C97A63; font-weight: 600; text-decoration: none; display: inline-block; margin-top: 2rem; font-size: 1.2rem;">Read the Guide →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PULL QUOTE -->
+    <section class="section" style="background: #F7F3EC; text-align: center;">
+        <div class="container">
+            <div class="pull-quote">
+                “These guides didn’t just give me information. They gave me permission to feel what I was feeling — and the tools to move through it with grace.”
+            </div>
+            <div style="margin-top: 3rem; font-size: 1.15rem; color: #555;">— Elena R., mother of a 7-month-old</div>
+        </div>
+    </section>
+
+    <!-- INVITATION -->
+    <section class="section" style="text-align: center;">
+        <div class="container" style="max-width: 620px;">
+            <h2 style="font-size: 3.6rem; margin-bottom: 1.5rem;">Stay Close to What Matters</h2>
+            <p style="font-size: 1.45rem; color: #444; margin-bottom: 3rem;">Join thousands of parents who receive quiet, thoughtful reflections on raising children.</p>
+            <a href="#" onclick="alert('Thank you. You are now part of our circle. (Demo)');" class="btn">Join the Circle</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p style="margin-bottom: 2rem;">ParentalPathway — Calm, intelligent guidance for modern parents.</p>
+            <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank" style="color: #C97A63; text-decoration: none; font-weight: 600;">Shop All Guides on Etsy →</a>
+        </div>
+    </footer>
+
+</body>
 </html>
