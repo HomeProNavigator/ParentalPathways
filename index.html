@@ -8,9 +8,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', system-ui, sans-serif; }
-        .heading-serif { font-family: 'Playfair Display', Georgia, serif; }
-        .premium-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-        .premium-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+        .heading-serif { font-family: 'Playfair Display', Georgia, serif; letter-spacing: -0.02em; }
+        .premium-card { 
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); 
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+        }
+        .premium-card:hover { 
+            transform: translateY(-6px); 
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
     </style>
 </head>
 <body class="bg-[#FCFAF7] text-[#1F1F1F]">
@@ -24,7 +30,7 @@
                 <a href="#why" class="hover:text-[#667A6D] transition-colors">Why Us</a>
                 <a href="#faq" class="hover:text-[#667A6D] transition-colors">FAQ</a>
                 <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank" 
-                   class="bg-[#C97A63] hover:bg-[#A46B5D] text-white px-6 py-3 rounded-full text-sm font-semibold transition-all">
+                   class="bg-[#C97A63] hover:bg-[#A46B5D] text-white px-6 py-3 rounded-full text-sm font-semibold transition-all active:scale-[0.985]">
                     Shop on Etsy
                 </a>
             </div>
@@ -32,47 +38,65 @@
     </nav>
 
     <!-- HERO -->
-    <section class="max-w-7xl mx-auto px-6 pt-16 pb-20">
-        <div class="grid lg:grid-cols-12 gap-12 items-center">
+    <section class="max-w-7xl mx-auto px-6 pt-20 pb-24">
+        <div class="grid lg:grid-cols-12 gap-x-12 items-center">
             <div class="lg:col-span-7">
-                <h1 class="heading-serif text-7xl leading-none tracking-tighter mb-6">
-                    Parenting Doesn't Come With Instructions.<br>
+                <div class="inline-flex items-center gap-x-2 bg-white border border-[#E9E3DA] rounded-full px-4 py-1.5 mb-6">
+                    <div class="w-2 h-2 bg-[#C97A63] rounded-full animate-pulse"></div>
+                    <span class="text-sm font-medium text-[#555]">Trusted by 8,000+ parents</span>
+                </div>
+                
+                <h1 class="heading-serif text-[68px] lg:text-[76px] leading-[0.96] tracking-[-3.5px] mb-6">
+                    Parenting Doesn’t Come<br>With Instructions.<br>
                     <span class="text-[#C97A63]">Our Guides Do.</span>
                 </h1>
-                <p class="max-w-lg text-2xl text-[#444] mb-10">
+                
+                <p class="max-w-lg text-[21px] text-[#444] mb-10 leading-tight">
                     Research-backed parenting guides designed to help you feel confident through pregnancy, newborn care, and your child’s earliest years.
                 </p>
+                
                 <div class="flex flex-wrap gap-4">
-                    <a href="#guides" class="bg-[#C97A63] hover:bg-[#A46B5D] text-white px-10 py-4 rounded-2xl text-lg font-semibold transition-all">Shop Guides</a>
-                    <a href="#guides" class="border border-[#667A6D] hover:bg-[#F7F3EC] px-10 py-4 rounded-2xl text-lg font-semibold transition-all">Browse Best Sellers</a>
+                    <a href="#guides" class="bg-[#C97A63] hover:bg-[#A46B5D] active:bg-[#8F5C4F] text-white px-10 py-4 rounded-2xl text-[17px] font-semibold transition-all active:scale-[0.985]">
+                        Shop Guides
+                    </a>
+                    <a href="#guides" class="border border-[#667A6D] hover:bg-white px-9 py-4 rounded-2xl text-[17px] font-semibold transition-all active:scale-[0.985]">
+                        Browse Best Sellers
+                    </a>
+                </div>
+                
+                <div class="flex items-center gap-x-8 mt-8 text-sm">
+                    <div class="flex items-center gap-x-2 text-[#666]">
+                        <span>✓</span> <span>Instant Download</span>
+                    </div>
+                    <div class="flex items-center gap-x-2 text-[#666]">
+                        <span>✓</span> <span>30-Day Guarantee</span>
+                    </div>
                 </div>
             </div>
-            <div class="lg:col-span-5 relative">
-                <div class="flex gap-6 justify-center lg:justify-end">
-                    <div class="w-48 -rotate-6"><img src="fourth-trimester.jpg" class="rounded-3xl w-full shadow-2xl" alt=""></div>
-                    <div class="w-48 rotate-3 mt-8"><img src="hospital-bag-cover.jpg" class="rounded-3xl w-full shadow-2xl" alt=""></div>
+
+            <!-- Hero Visual -->
+            <div class="lg:col-span-5 mt-12 lg:mt-0">
+                <div class="flex gap-5 justify-center lg:justify-end">
+                    <div class="w-52 -rotate-[8deg]">
+                        <img src="fourth-trimester.jpg" class="rounded-3xl shadow-2xl w-full" alt="The Fourth Trimester Guide">
+                    </div>
+                    <div class="w-52 rotate-[6deg] mt-6">
+                        <img src="hospital-bag-cover.jpg" class="rounded-3xl shadow-2xl w-full" alt="Your Hospital Bag, Actually">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- EXPANDED PHILOSOPHY SECTION (Wider Version) -->
+    <!-- PHILOSOPHY (Wider & More Detailed) -->
     <section id="why" class="max-w-6xl mx-auto px-6 pb-24">
         <div class="max-w-5xl mx-auto text-center">
             <h2 class="heading-serif text-5xl tracking-tight mb-8">We’ve Already Done The Work</h2>
             
             <div class="max-w-4xl mx-auto space-y-6 text-lg text-[#555]">
-                <p>
-                    The internet is full of opinions. We offer something rarer: <span class="font-semibold text-[#1F1F1F]">clarity</span>.
-                </p>
-                
-                <p>
-                    Every guide we create is the result of deep research, lived experience, and a genuine commitment to telling parents the truth — not just what’s trendy or easy to package.
-                </p>
-                
-                <p>
-                    We cut through the noise, the conflicting advice, and the constant pressure so you can focus on what actually matters at each stage of parenting. No judgment. No fluff. Just calm, practical guidance designed for real life.
-                </p>
+                <p>The internet is full of opinions. We offer something rarer: <span class="font-semibold text-[#1F1F1F]">clarity</span>.</p>
+                <p>Every guide we create is the result of deep research, lived experience, and a genuine commitment to telling parents the truth — not just what’s trendy or easy to package.</p>
+                <p>We cut through the noise, the conflicting advice, and the constant pressure so you can focus on what actually matters at each stage of parenting. No judgment. No fluff. Just calm, practical guidance designed for real life.</p>
             </div>
         </div>
 
@@ -81,7 +105,6 @@
             <h3 class="text-3xl font-semibold tracking-tight mb-10 text-center">What Makes Us Different</h3>
             
             <div class="grid md:grid-cols-2 gap-x-16 gap-y-10 text-left">
-                
                 <div class="flex gap-4">
                     <div class="text-[#C97A63] text-2xl mt-1 flex-shrink-0">→</div>
                     <div>
@@ -89,7 +112,6 @@
                         <p class="text-[#555]">Every guide combines evidence-based information with the real, messy reality of parenting — not theory from a textbook.</p>
                     </div>
                 </div>
-
                 <div class="flex gap-4">
                     <div class="text-[#C97A63] text-2xl mt-1 flex-shrink-0">→</div>
                     <div>
@@ -97,7 +119,6 @@
                         <p class="text-[#555]">We give you clear steps, checklists, and scripts you can actually use — instead of long lists of things you “should” be doing.</p>
                     </div>
                 </div>
-
                 <div class="flex gap-4">
                     <div class="text-[#C97A63] text-2xl mt-1 flex-shrink-0">→</div>
                     <div>
@@ -105,7 +126,6 @@
                         <p class="text-[#555]">We meet you where you are. Whether you're breastfeeding, formula feeding, cosleeping, or sleep training — we support your choices.</p>
                     </div>
                 </div>
-
                 <div class="flex gap-4">
                     <div class="text-[#C97A63] text-2xl mt-1 flex-shrink-0">→</div>
                     <div>
@@ -113,12 +133,11 @@
                         <p class="text-[#555]">Our guides are concise, well-organized, and easy to read in short moments — because we know you don’t have hours to spare.</p>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- BEST SELLING GUIDES -->
+    <!-- BEST SELLING GUIDES (9 Guides) -->
     <section id="guides" class="max-w-7xl mx-auto px-6 pb-20">
         <div class="flex justify-between items-end mb-10">
             <div>
@@ -130,7 +149,7 @@
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <!-- Guide 1 -->
+            <!-- 1 -->
             <div class="premium-card bg-white rounded-3xl overflow-hidden border border-[#E9E3DA]">
                 <img src="fourth-trimester.jpg" class="w-full h-[320px] object-contain bg-[#F7F3EC] p-6">
                 <div class="p-8">
@@ -143,7 +162,7 @@
                 </div>
             </div>
 
-            <!-- Guide 2 -->
+            <!-- 2 -->
             <div class="premium-card bg-white rounded-3xl overflow-hidden border border-[#E9E3DA]">
                 <img src="hospital-bag-cover.jpg" class="w-full h-[320px] object-contain bg-[#F7F3EC] p-6">
                 <div class="p-8">
@@ -156,7 +175,7 @@
                 </div>
             </div>
 
-            <!-- Guide 3 -->
+            <!-- 3 -->
             <div class="premium-card bg-white rounded-3xl overflow-hidden border border-[#E9E3DA]">
                 <img src="relationship-cover.jpg" class="w-full h-[320px] object-contain bg-[#F7F3EC] p-6">
                 <div class="p-8">
@@ -169,7 +188,7 @@
                 </div>
             </div>
 
-            <!-- Guide 4 -->
+            <!-- 4 -->
             <div class="premium-card bg-white rounded-3xl overflow-hidden border border-[#E9E3DA]">
                 <img src="what-to-expect-prenatal.jpg" class="w-full h-[320px] object-contain bg-[#F7F3EC] p-6">
                 <div class="p-8">
@@ -182,7 +201,7 @@
                 </div>
             </div>
 
-            <!-- Guide 5 -->
+            <!-- 5 -->
             <div class="premium-card bg-white rounded-3xl overflow-hidden border border-[#E9E3DA]">
                 <img src="newborn-sleep-foundations.jpg" class="w-full h-[320px] object-contain bg-[#F7F3EC] p-6">
                 <div class="p-8">
@@ -195,7 +214,7 @@
                 </div>
             </div>
 
-            <!-- Guide 6 -->
+            <!-- 6 -->
             <div class="premium-card bg-white rounded-3xl overflow-hidden border border-[#E9E3DA]">
                 <img src="soothing-playbook.jpg" class="w-full h-[320px] object-contain bg-[#F7F3EC] p-6">
                 <div class="p-8">
@@ -208,7 +227,7 @@
                 </div>
             </div>
 
-            <!-- Guide 7 -->
+            <!-- 7 -->
             <div class="premium-card bg-white rounded-3xl overflow-hidden border border-[#E9E3DA]">
                 <img src="feeding-peace-plan.jpg" class="w-full h-[320px] object-contain bg-[#F7F3EC] p-6">
                 <div class="p-8">
@@ -221,7 +240,7 @@
                 </div>
             </div>
 
-            <!-- Guide 8 -->
+            <!-- 8 -->
             <div class="premium-card bg-white rounded-3xl overflow-hidden border border-[#E9E3DA]">
                 <img src="milestone-map.jpg" class="w-full h-[320px] object-contain bg-[#F7F3EC] p-6">
                 <div class="p-8">
@@ -234,7 +253,7 @@
                 </div>
             </div>
 
-            <!-- Guide 9 -->
+            <!-- 9 -->
             <div class="premium-card bg-white rounded-3xl overflow-hidden border border-[#E9E3DA]">
                 <img src="meltdown-playbook.jpg" class="w-full h-[320px] object-contain bg-[#F7F3EC] p-6">
                 <div class="p-8">
@@ -258,25 +277,31 @@
 
     <!-- TESTIMONIALS -->
     <section class="max-w-6xl mx-auto px-6 pb-20">
-        <h2 class="heading-serif text-5xl text-center tracking-tight mb-14">Parents Are Saying</h2>
+        <h2 class="heading-serif text-5xl text-center tracking-tight mb-14">Real Parents. Real Results.</h2>
         <div class="grid md:grid-cols-3 gap-8">
             <div class="bg-white p-8 rounded-3xl border border-[#E9E3DA]">
                 <div class="flex text-[#C97A63] mb-4">★★★★★</div>
-                <p class="italic mb-6">"These guides didn’t just give me information. They gave me permission to feel what I was feeling — and the tools to move through it with grace."</p>
-                <div class="font-semibold">— Elena R.</div>
-                <div class="text-sm text-[#666]">Mother of a 7-month-old</div>
+                <p class="italic text-[17px] leading-snug mb-8">"These guides didn’t just give me information. They gave me permission to feel what I was feeling — and the tools to move through it with grace."</p>
+                <div>
+                    <div class="font-semibold">Elena R.</div>
+                    <div class="text-sm text-[#666]">Mother of a 7-month-old</div>
+                </div>
             </div>
             <div class="bg-white p-8 rounded-3xl border border-[#E9E3DA]">
                 <div class="flex text-[#C97A63] mb-4">★★★★★</div>
-                <p class="italic mb-6">"The hospital bag guide saved me hours of panic Googling. Everything I actually needed was there."</p>
-                <div class="font-semibold">— Sarah M.</div>
-                <div class="text-sm text-[#666]">Expecting twins</div>
+                <p class="italic text-[17px] leading-snug mb-8">"The hospital bag guide saved me hours of panic Googling. Everything I actually needed was there."</p>
+                <div>
+                    <div class="font-semibold">Sarah M.</div>
+                    <div class="text-sm text-[#666]">Expecting twins</div>
+                </div>
             </div>
             <div class="bg-white p-8 rounded-3xl border border-[#E9E3DA]">
                 <div class="flex text-[#C97A63] mb-4">★★★★★</div>
-                <p class="italic mb-6">"Finally, something that feels written by someone who actually understands new parenthood."</p>
-                <div class="font-semibold">— Marcus T.</div>
-                <div class="text-sm text-[#666]">Dad of a 3-year-old</div>
+                <p class="italic text-[17px] leading-snug mb-8">"Finally, something that feels written by someone who actually understands new parenthood. My husband and I both read it."</p>
+                <div>
+                    <div class="font-semibold">Marcus T.</div>
+                    <div class="text-sm text-[#666]">Dad of a 3-year-old</div>
+                </div>
             </div>
         </div>
     </section>
