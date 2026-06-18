@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParentalPathway • Calm Parenting Guides</title>
+    <style>
+        :root {
+            --sage: #667A6D;
+            --cream: #F7F3EC;
+            --terracotta: #C97A63;
+        }
+        body { font-family: Georgia, serif; margin: 0; background: #FCFAF7; color: #2B2B2B; line-height: 1.6; }
+        header { background: var(--cream); padding: 1rem 5%; position: sticky; top: 0; border-bottom: 1px solid #ddd; }
+        nav a { margin: 0 15px; text-decoration: none; color: #2B2B2B; font-weight: 500; }
+        .hero { background: linear-gradient(to bottom, #F7F3EC, #e8d9c7); padding: 100px 5% 80px; text-align: center; }
+        .hero h1 { font-size: 3.2rem; line-height: 1.1; margin-bottom: 1rem; }
+        .cta { background: var(--terracotta); color: white; padding: 14px 32px; border-radius: 6px; text-decoration: none; font-weight: 600; display: inline-block; margin: 10px; }
+        .cta-secondary { background: var(--sage); }
+        .section { padding: 80px 5%; }
+        .card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin: 20px 0; transition: transform 0.2s; }
+        .card:hover { transform: translateY(-8px); }
+        .card img { width: 100%; height: 220px; object-fit: cover; }
+        footer { background: #F7F3EC; padding: 40px 5%; text-align: center; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav style="max-width:1200px; margin:auto; display:flex; justify-content:space-between; align-items:center;">
+            <div style="font-size:1.8rem; font-weight:bold; color:var(--sage);">ParentalPathway</div>
+            <div>
+                <a href="#shop">Shop</a>
+                <a href="#collections">Collections</a>
+                <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank">Etsy Shop</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Parenting Doesn't Come With Instructions.<br>Ours Come Close.</h1>
+        <p style="font-size:1.3rem; max-width:700px; margin:20px auto;">Practical, research-backed guides for pregnancy, newborn care, toddler years, and beyond.</p>
+        <div>
+            <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank" class="cta">Shop Guides on Etsy</a>
+            <a href="#" onclick="alert('Free Parenting Toolkit downloaded! Check your email (demo).')" class="cta cta-secondary">Free Starter Toolkit</a>
+        </div>
+    </section>
+
+    <section class="section" id="shop">
+        <h2 style="text-align:center; font-size:2.4rem;">Our Popular Guides</h2>
+        <div style="max-width:1200px; margin:auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(320px,1fr)); gap:30px;">
+            
+            <div class="card">
+                <div style="background:#D8AAA0; height:220px; display:flex; align-items:center; justify-content:center; font-size:4rem;">👜</div>
+                <div style="padding:25px;">
+                    <h3>Your Hospital Bag, Actually</h3>
+                    <p>What actually matters and how to pack without panic.</p>
+                    <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank" class="cta" style="font-size:0.95rem; padding:10px 24px;">Buy on Etsy • $17</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div style="background:#DCC9AA; height:220px; display:flex; align-items:center; justify-content:center; font-size:4rem;">👶</div>
+                <div style="padding:25px;">
+                    <h3>The Fourth Trimester Guide</h3>
+                    <p>What the first 12 weeks are really like.</p>
+                    <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank" class="cta" style="font-size:0.95rem; padding:10px 24px;">Buy on Etsy • $19</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div style="background:#B7A9C9; height:220px; display:flex; align-items:center; justify-content:center; font-size:4rem;">🌙</div>
+                <div style="padding:25px;">
+                    <h3>Sleep Transitions</h3>
+                    <p>4 months to 2 years — understanding regressions.</p>
+                    <a href="https://www.etsy.com/shop/ParentalPathway" target="_blank" class="cta" style="font-size:0.95rem; padding:10px 24px;">Buy on Etsy • $18</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© ParentalPathway • Calm, research-backed parenting resources</p>
+        <p><a href="https://www.etsy.com/shop/ParentalPathway" target="_blank">Shop all guides on Etsy</a></p>
+    </footer>
+</body>
+</html>
